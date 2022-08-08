@@ -33,9 +33,9 @@ public class User {
     public void new_post(Rectangle rect,String caption){
         Post post = new Post(rect,caption);
         post.username=this.username;
-        posts.add(post);
+        posts.add(0,post);
         for (int i=0; i<followers.size(); i++)
-            followers.get(i).latest_posts.add(post);
+            followers.get(i).latest_posts.add(0,post);
        /* for (int i=0; i<followers.size(); i++){
             followers.get(i).latest_posts.add("[" +this.username +"]:"+twitt);
         }

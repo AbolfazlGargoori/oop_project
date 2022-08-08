@@ -113,12 +113,10 @@ public class HelloController {
             if (User.users.get(i).username.equals(username)) {
                 if (User.users.get(i).password.equals(password)) {
                     HomeTabController.loginUser = User.users.get(i);
-                  /*  UserAccountController.loginUser = User.users.get(i);
+                    UserAccountController.loginUser = User.users.get(i);
                     NewPostTabController.loginUser = User.users.get(i);
                     ChatTabController.loginUser = User.users.get(i);
                     MyPageTabController.loginUser = User.users.get(i);
-
-                   */
                     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm");
                     LocalDateTime now = LocalDateTime.now();
                     loginError.setVisible(false);

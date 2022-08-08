@@ -28,10 +28,9 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         User a=new User("Abolfazl","aaa",false);
-        User b=new User("A","aaa",false);
+        User b=new User("Ab","aaa",false);
         User c=new User("Abo","aaa",false);
-        User d=new User("Abol","aaa",true);
-
+        User d=new User("Abol","aaa",false);
         User.users.add(a);
         User.users.add(b);
         User.users.add(c);
@@ -52,7 +51,7 @@ public class Main extends Application {
         Rectangle rect3 = new Rectangle();
         rect3.setWidth(540);
         rect3.setHeight(327);
-        rect3.setFill(Color.BLUEVIOLET);
+        rect3.setFill(Color.RED);
         Rectangle rect4 = new Rectangle();
         rect4.setWidth(540);
         rect4.setHeight(327);
@@ -72,27 +71,27 @@ public class Main extends Application {
 
     public static void changeSceneToHomeTab () {
         myStage.setScene(HomeTabController.scene);
-        myStage.setTitle("Hello");
+        myStage.setTitle("Home");
     }
 
     public static void changeSceneToUserAccount () {
         myStage.setScene(UserAccountController.scene);
-        myStage.setTitle("User");
+        myStage.setTitle("Search");
     }
 
     public static void changeSceneToNewPostTab () {
         myStage.setScene(NewPostTabController.scene);
-        myStage.setTitle("Hello");
+        myStage.setTitle("NewPost");
     }
 
     public static void changeSceneToChatTab () {
         myStage.setScene(ChatTabController.scene);
-        myStage.setTitle("Hello");
+        myStage.setTitle("Chat");
     }
 
     public static void changeSceneToMyPageTab () {
         myStage.setScene(MyPageTabController.scene);
-        myStage.setTitle("Hello");
+        myStage.setTitle("MyPage");
     }
 
     public static void changeSceneToHelloController () {
