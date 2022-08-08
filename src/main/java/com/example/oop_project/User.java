@@ -28,6 +28,7 @@ public class User {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm");
         LocalDateTime now = LocalDateTime.now();
         this.date=dtf.format(now);
+        users.add(this);
     }
 
     public void new_post(Rectangle rect,String caption){

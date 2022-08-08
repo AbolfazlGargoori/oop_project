@@ -31,10 +31,6 @@ public class Main extends Application {
         User b=new User("Ab","aaa",false);
         User c=new User("Abo","aaa",false);
         User d=new User("Abol","aaa",false);
-        User.users.add(a);
-        User.users.add(b);
-        User.users.add(c);
-        User.users.add(d);
         a.follow("Ab");
         a.follow("Abo");
         c.follow("Ab");
